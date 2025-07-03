@@ -17,6 +17,7 @@
 ## 📦 Features
 
 ### Dashboard
+<img width="1409" alt="Screenshot 2025-07-01 at 3 15 42 PM" src="https://github.com/user-attachments/assets/3a3a5697-fae2-4e38-a55c-94a064128c77" />
 
 - Add, edit, and delete transactions (income/expense).
 - Paginated table of recent transactions, sortable by date.
@@ -103,9 +104,7 @@ This project can be deployed via AWS Amplify Console by connecting your Git repo
 3. **Cognito**: Create a user pool & app client; configure callback URL, OAuth flows, and identity providers.
 4. **Static Website**:
    - Build React: `npm run build`
-   - Upload `build/` folder to S3 (public read)
-   - Configure CloudFront distribution with S3 origin and OAC (Origin Access Control).
-   - Invalidate cache on each build: `aws cloudfront create-invalidation --distribution-id <ID> --paths '/*'`
+   - Share repository with AWS Amplify to host static website
 
 ---
 
@@ -121,7 +120,6 @@ finance-tracker/
 │   ├── styles/         # Global CSS & theming
 │   ├── App.jsx
 │   └── index.js
-├── .env.example
 ├── package.json
 └── README.md
 ```
@@ -132,7 +130,6 @@ finance-tracker/
 
 - Lambdas need an inline or managed IAM policy granting `dynamodb:PutItem`, `Query`, `Scan`, `UpdateItem`, `DeleteItem` on your DynamoDB table.
 - Cognito App Client must list your production callback URL(s) and use `Authorization code` grant with `openid`, `email`, `phone` scopes.
-- S3 bucket for static hosting should be private when fronted by CloudFront with OAC.
 
 ---
 
@@ -144,13 +141,6 @@ finance-tracker/
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
 
 *Happy budgeting!* 🎉
 
