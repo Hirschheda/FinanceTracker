@@ -1,5 +1,7 @@
 # Finance Tracker
 
+Link: https://main.d3rigao14mb5zh.amplifyapp.com/ 
+
 **Finance Tracker** is a full-stack web application that lets users record, visualize, and manage their personal finances. Users can log income and expenses, view summaries, filter by category, and see interactive charts. An additional **Investments** section allows users to track stock holdings, view profit & loss, and see portfolio performance.
 
 ---
