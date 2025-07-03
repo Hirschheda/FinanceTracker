@@ -26,6 +26,7 @@
 - Light / dark theme toggle persisted across sessions.
 
 ### Investments
+<img width="1409" alt="Screenshot 2025-07-03 at 10 14 37 AM" src="https://github.com/user-attachments/assets/940fb3cb-1204-4e51-b995-144d1f27b322" />
 
 - Search for stock tickers (leveraging Finnhub API).
 - Add, edit, delete or "sell" stock positions.
